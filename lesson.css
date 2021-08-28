@@ -1,0 +1,96 @@
+/* ----------------　画像の装飾（直接丸くする） -------------- */
+#png{
+    border-radius:50%;
+    width:25%
+}
+
+/* ----------------- 画像の装飾（丸く切り取る）--------------- */
+#circle{
+    background-image:url(150.png);
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background-size:200px 200px;
+}
+
+/* ----------------- スマホでは非表示にする ------------------ */
+@media screen and (max-width:600px){
+    #hide{
+        display:none;
+    }
+}
+
+/* -------------------  文章を右肩上がりにする　----------------- */
+#right{
+    transform:rotate(-10deg);
+    padding:50px 0 50px 0 ;
+    width:auto;
+    height: 50px;
+    box-sizing:border-box;
+    margin-bottom:100px;
+}
+
+
+/* ------------------- 最初の文字だけ大きくする ------------------ */
+#big::first-letter{
+    font-size:30px;
+    width:auto;
+    height: auto;
+    box-sizing:border-box;
+    margin:auto;
+}
+#big{
+    width: auto;
+    height: 40px;
+    margin-bottom: 300px;
+}
+
+
+
+/* -----------------  アイコン　----------------------- */
+.fa-search{
+    color:darkturquoise;
+    font-size:30px;
+}
+
+.fa-sign-out-alt{
+    color:darkturquoise;
+    font-size:30px;
+}
+
+.fa-twitter{
+    color:darkturquoise;
+    font-size:30px;
+}
+
+header div i:hover{
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+header div i:active{
+    font-size:45px;
+    color:dodgerblue;
+}
+
+.icon{
+    display:grid;
+    grid-template-columns: 50px 50px 50px;
+}
+
+
+
+
+/* --------------------フッターアイコン　--------------------- */
+.fa-arrow-circle-up{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    font-size:50px;
+    color:lightblue;
+}
+
+
+/* -------------------- ページトップへ　-------------------------- */
+html{
+    scroll-behavior: smooth;
+}
